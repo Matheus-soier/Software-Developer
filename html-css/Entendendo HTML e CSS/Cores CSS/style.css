@@ -1,0 +1,40 @@
+body {
+  width: 200px;
+}
+
+/* Cores com RGB */
+
+h1 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+/* Cores com HEX */
+
+#texto-unico {
+  color: #fff;
+  background-color: #d9ff01;
+}
+
+.maca,
+.banana,
+.laranja,
+.limao {
+  color: #fff;
+}
+
+.maca {
+  background-color: #ff0000;
+}
+
+.banana {
+  background-color: #fbff00;
+}
+
+.laranja {
+  background-color: #ff8000;
+}
+
+.limao {
+  background-color: #0dff00;
+}

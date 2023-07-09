@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Label</title>
+</head>
+
+<body>
+  <h2>Teste do Label</h2>
+
+  <form action="formularios.html" method="get">
+    <label for="name">Digite seu nome:</label><br>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="name">
+
+    <br><br>
+
+    <!-- Maneira 1 -->
+
+    <label for="check">Eu declaro que aceito os Termos e condições.</label>
+    <input type="checkbox" name="check" id="check">
+    <br>
+
+    <!-- Maneira 2 -->
+
+    <label>Eu declaro que aceito os Termos e condições.
+      <input type="checkbox" name="check">
+    </label>
+
+  </form>
+</body>
+
+</html>
