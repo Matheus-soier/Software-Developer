@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formatação CSS de Formulários</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 20px 0 0 0;
+    }
+
+    input[type=text],
+    textarea,
+    select {
+      width: 500px;
+      padding: 10px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      outline: 0;
+      margin-top: 5px;
+    }
+
+    textarea {
+      height: 200px;
+      resize: none;
+    }
+
+    .termos-link {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .termos-link:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      font-size: 15px;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+  </style>
 </head>
+
 <body>
   <h1>Formatação CSS de Formulários</h1>
 
-  <h2>testando git hub</h2>
+  <h2>Àrea de Cadastro</h2>
+  <form action="formatacao-css.html" method="get">
+    <label for="name">
+      Digite seu nome:
+    </label>
+    <input type="text" name="name" id="name">
+
+    <label for="descricao">
+      Deixe sua descrição:
+    </label>
+    <textarea id="descricao" name="descricao" cols="30" rows="5">
+      </textarea>
+
+    <label for="categoria">
+      Selecione seu Tamanho:
+    </label>
+    <select name="categoria" id="categoria">
+      <option value="tipo-a">A</option>
+      <option value="tipo-b">B</option>
+      <option value="tipo-c">C</option>
+      <option value="tipo-d">D</option>
+      <option value="tipo-e">E</option>
+    </select>
+
+    <label for="declaro-termos">
+      Eu declaro que aceito os <a href="https://google.com" target="_blank" class="termos-link">termos de uso</a>.
+
+      <input type="checkbox" name="declaro-termos" id="declaro-termos">
+    </label>
+
+    <button>Fazer cadastro</button>
+  </form>
 </body>
+
 </html>
