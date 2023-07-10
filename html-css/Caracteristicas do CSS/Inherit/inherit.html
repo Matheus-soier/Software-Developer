@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O inherit</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .box {
+      font-size: 15px;
+      color: blue;
+    }
+
+    h1 {
+      font-size: 30px;
+      color: red
+    }
+
+    .box h1 {
+      font-size: inherit;
+      color: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Título Fora</h1>
+  <div class="box">
+    <h1>Esse é o Título da página</h1>
+  </div>
+</body>
+
+</html>

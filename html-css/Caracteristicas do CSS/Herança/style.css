@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+div {
+  padding: 30px;
+  height: 100vh;
+  background-color: #eee;
+  font-size: 30px;
+  color: red;
+}
+
+span {
+  color: blue;
+  font-weight: bold;
+  border: 1px solid black;
+}

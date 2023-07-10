@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unidade de Medida Relativa</title>
+  <style>
+    /* Unidade "em" herda o tamanho do elemento Pai, com efeito cascata*/
+
+    /* Unidade "rem" herda o primeiro elemento Pai, sem efeito cascata */
+    body {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    .box {
+      font-size: 2em;
+    }
+
+    .box-interno {
+      background-color: #999;
+      width: 10em;
+      height: 10em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Exemplo de Título</h1>
+
+  <div class="box">
+    <div class="box-interno">
+      Texto de exemplo aleatório
+    </div>
+  </div>
+</body>
+
+</html>
