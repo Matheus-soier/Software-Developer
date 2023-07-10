@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orientation no @media</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+    }
+
+    .caixa {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      margin: 5px;
+    }
+
+    @media (orientation: landscape) {
+      body {
+        flex-direction: row;
+      }
+    }
+
+
+    @media (orientation: portrait) {
+      body {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="caixa">Caixa 1</div>
+  <div class="caixa">Caixa 2</div>
+  <div class="caixa">Caixa 3</div>
+  <div class="caixa">Caixa 4</div>
+</body>
+
+</html>
