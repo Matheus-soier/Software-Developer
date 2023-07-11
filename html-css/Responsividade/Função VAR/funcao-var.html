@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Função VAR</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    :root {
+      --bg-site: #000;
+      --bg-div: #eee;
+      --color-text: blue;
+      --h1-color: #000;
+      --text-size: 18px;
+    }
+
+    body {
+      background-color: var(--bg-site);
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: var(--bg-div);
+      height: 400px;
+      width: 400px;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      position: absolute;
+    }
+
+    .container p {
+      margin-top: 10px;
+      font-size: var(--text-size);
+    }
+
+    .grid {
+      position: relative;
+      top: 20%;
+      display: flex;
+      flex-direction: row;
+      background-color: #fff;
+      padding: 6px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Testando a Função VAR</h1>
+
+    <div class="grid">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illo impedit hic. Voluptatem eos, iusto ex
+        repudiandae necessitatibus, possimus sequi vel error vitae, ipsam veniam. Soluta, esse. Culpa, ut quas.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis quos ducimus velit illo similique sit illum amet
+        cum natus, aut tempore! Soluta vero delectus qui numquam non totam maxime iure.</p>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Função VAR em media query</title>
+  <style>
+    :root {
+      --bg-color: #eee;
+      --text-size: 25px;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      font-size: var(--text-size);
+    }
+
+    @media (max-width: 400px) {
+      :root {
+        --text-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Função VAR em media query</h1>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nihil culpa animi, itaque sint laudantium minus
+    inventore unde quibusdam ratione sequi eveniet reiciendis, dolorem ab aspernatur tenetur sit dolor. Numquam. Lorem
+    ipsum, dolor sit amet consectetur adipisicing elit. Aut veniam expedita velit laboriosam aspernatur porro magni
+    impedit earum dolore esse explicabo nemo repudiandae nobis sequi, a, libero omnis. Quod, itaque?</p>
+
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate tempore ullam tenetur dicta soluta, impedit
+    enim blanditiis non! Debitis amet suscipit minima perspiciatis magni eum enim veniam voluptas nihil officia.lore
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatem esse quisquam quidem eveniet nesciunt,
+    magnam veniam, molestiae quam necessitatibus consequatur obcaecati expedita at, magni non similique mollitia itaque
+    adipisci?</p>
+</body>
+
+</html>
