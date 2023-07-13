@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Rastreio</title>
+  <link rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/0751/6343/5329/files/newsmile_7_3.webp?v=1682283614"
+    type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .area-rastreio {
+      border-radius: 20px;
+      max-width: 100%;
+      text-align: center;
+      padding: 20px;
+      border-radius: 20px;
+background: #ffffff;
+box-shadow: inset 6px 6px 12px #c9c9c938,
+            inset -6px -6px 12px #c9c9c92d;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 150px;
+      height: auto;
+      max-width: 100%;
+    }
+
+    legend {
+      background-color: black;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 6px;
+    }
+
+    fieldset {
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid rgb(0, 0, 0);
+    }
+
+    .area-rastreio form input {
+      border-radius: 5px;
+      padding: 10px;
+
+    }
+
+    button {
+      margin-top: 15px;
+      border: 0;
+      background-color: black;
+      color: white;
+       padding: 10px 0px;
+      width: 100%;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="area-rastreio">
+      <div class="logo">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0751/6343/5329/files/newsmile_2000_x_800_px_3253db82-28b1-48ee-ba6f-06e7084a91f9.png?v=1687476581"
+          alt="Logo Newsmile">
+      </div>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>
+            Digite seu Email:
+          </legend>
+          <label for="rastreio">
+            <input type="email" name="rastreio" id="rastreio" placeholder="Digite seu email aqui" required>
+          </label>
+        </fieldset>
+        <button>Pesquisar Rastreio</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
