@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradiente CSS</title>
+  <style>
+    .container {
+      width: 800px;
+      height: 400px;
+
+      /* Backgrounds com gradiente para todos navegadores */
+
+      background-image: linear-gradient(to bottom, green, blue, red);
+
+      background-image: -webkit-linear-gradient(to bottom, green, blue, red);
+
+      background-image: -moz-linear-gradient(to bottom, green, blue, red);
+
+      background-image: -o-linear-gradient(to bottom, green, blue, red);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container"></div>
+</body>
+
+</html>
