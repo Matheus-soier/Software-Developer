@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletores por atributos</title>
+  <style>
+    [type=text],
+    [type=password] {
+      display: block;
+    }
+
+    [required] {
+      background-color: blue;
+    }
+
+    [name="usuario"] {
+      background-color: red;
+    }
+
+    [href*=curso] {
+      background-color: black;
+      color: aliceblue;
+    }
+
+    [href^="https:"] {
+      background-color: rgb(236, 56, 212);
+      color: aliceblue;
+    }
+
+    [href^="http:"] {
+      background-color: rgb(142, 195, 81);
+      color: aliceblue;
+    }
+
+    div {
+      background-color: yellow;
+      margin: 10px;
+    }
+
+    div:empty {
+      background-color: red;
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <input type="text" name="usuario" id="nome">
+  <input type="password" name="senha" id="senha" required>
+  <a href="https://alunos.b7web.com.br/curso/html5-e-css3/seletor-pelo-atributo-12">Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Perspiciatis fuga iure similique nostrum saepe. Mollitia ab eveniet porro? Iure quidem
+    aliquid deserunt. Exercitationem aliquid, magni ab repellat asperiores volupta
+
+    <input type="text" name="usuario" id="nome">
+    <input type="password" name="senha" id="senha" required>
+    <a href="http://alunos.b7web.com.br/curso/html5-e-css3/seletor-pelo-atributo-12">Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Et rerum sed facilis similique sunt expedita rem error non quo, exercitationem ipsum
+      corporis nostrum dolorem! Harum voluptas quod neque dolorem ex?</a>
+
+    <input type="text" name="usuario" id="nome">
+    <input type="password" name="senha" id="senha " required>
+    <a href="http://alunos.b7web.com.br/curso/html5-e-css3/seletor-pelo-atributo-12">Lorem ipsum dolor sit, amet
+      consectetur adipisicing elit. Fuga alias dolore explicabo non, quas aliquid vel, animi veniam cumque pariatur
+      minima
+      eius a unde impedit id laudantium reiciendis nihil repudiandae!</a>
+
+    <input type="text" name="usuario" id="nome">
+    <input type="password" name="senha" id="senha" required>
+    <a href="http://alunos.b7web.com.br/curso/html5-e-css3/seletor-pelo-atributo-12">Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Repellendus, tempore? Neque nulla autem earum cupiditate natus, est ex laudantium
+      voluptates aut molestias porro blanditiis velit maxime illo? Harum, fugit porro?</a>
+    <a href="http://alunos.b7web.com.br/curso/html5-e-css3/seletor-pelo-atributo-12">Lorem ipsum, dolor sit amet
+      consectetur adipisicing elit. Itaque nisi velit vel illo ea assumenda at illum corrupti ullam reprehenderit
+      consequatur vero, officia repudiandae quae sit dignissimos dolorum. Cumque, dolorem?</a>
+
+    <div>Texto 1</div>
+    <div>Texto 2</div>
+    <div></div>
+    <div>Texto 4</div>
+    <div>Texto 5</div>
+</body>
+
+</html>

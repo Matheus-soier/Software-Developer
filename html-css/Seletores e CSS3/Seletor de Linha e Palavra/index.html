@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletores</title>
+  <style>
+    p::first-letter {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    p::first-line {
+      background-color: yellow;
+    }
+
+    .div-test {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+
+    div:first-child {
+      border-radius: 20px 20px 0 0;
+    }
+
+    div:last-child {
+      border-radius: 0 0 20px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium animi tenetur pariatur incidunt, eveniet
+    itaque. Laborum, rem aut, est incidunt iste esse reiciendis <br> voluptas qui voluptatibus dolores harum iusto
+    doloribus.
+  </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur beatae impedit adipisci blanditiis non, aut
+    assumenda incidunt illum deserunt similique soluta tempora ex <br> quibusdam ipsum laborum possimus molestias illo.
+  </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, praesentium asperiores ex qui odio quibusdam. Nobis
+    magni laborum veniam rerum in nisi necessitatibus voluptates, <br> itaque fugit velit voluptatum impedit
+    perspiciatis.
+  </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et modi odio, pariatur quod reiciendis aperiam molestias,
+    repudiandae similique, commodi voluptatum officiis vero aliquam <br> fugiat eveniet? Velit porro veritatis neque
+    quae?
+  </p>
+  <div>
+    <div class="div-test" style="background-color: red;"></div>
+    <div class="div-test"></div>
+    <div class="div-test"></div>
+    <div class="div-test"> </div>
+  </div>
+</body>
+
+</html>
