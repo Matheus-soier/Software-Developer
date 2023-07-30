@@ -11,35 +11,40 @@
       padding: 0;
       box-sizing: border-box;
       font-family: Arial, Helvetica, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      overflow: hidden;
     }
 
     .container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(50px, 100px));
+      /* grid-template-rows: 100px 100px 100px; */
+      grid-auto-rows: minmax(100px, auto);
+      justify-content: center;
       grid-column-gap: 10px;
       grid-row-gap: 10px;
       /* start shorthand */
-      grid-gap: 30px 10px;
       /*<-- obsoleto*/
-      gap: 30px 10px;
+      grid-gap: 10px;
+      gap: 10px;
       /* end shorthand */
+      width: 100vw;
+      margin: 10px;
+      background-color: gray;
     }
 
     .item {
       background-color: blue;
-      border-radius: 10px;
+      border-radius: 5px;
       display: flex;
       justify-content: center;
       color: white;
       align-items: center;
       padding: 10px;
       font-weight: bold;
-      height: 20vh;
-      width: 10vw;
+    }
+
+    .item:hover {
+      background-color: red;
     }
   </style>
 </head>
@@ -50,7 +55,18 @@
     <div class="item">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
-    <div class="item">5</div>
+    <!-- <div class="item">
+      5 <br>
+      Lorem ipsum dolor sit amet. <br>
+      Lorem ipsum dolor sit amet consectetur. <br>
+      Lorem ipsum dolor sit. <br>
+      Lorem ipsum dolor sit. <br>
+      5 <br>
+      Lorem ipsum dolor sit amet. <br>
+      Lorem ipsum dolor sit amet consectetur. <br>
+      Lorem ipsum dolor sit. <br>
+      Lorem ipsum dolor sit. <br>
+    </div> -->
     <div class="item">6</div>
     <div class="item">7</div>
     <div class="item">8</div>
