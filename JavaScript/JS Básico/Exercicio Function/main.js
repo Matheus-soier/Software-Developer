@@ -4,12 +4,12 @@ function porcentagem(x, y) {
   return (y / x) * 100
 }
 
-let x = 100
-let y = 10
+let x = 50
+let y = 20
 let pctn = porcentagem(x, y)
 console.log(`${pctn}% de ${x} é ${y}`)
 
-// EXERCICIO 2
+ // EXERCICIO 2
 
 function precoCasa(metragem, quartos) {
   if (quartos === 1) {
@@ -22,7 +22,7 @@ function precoCasa(metragem, quartos) {
 }
 
 let metragem = 3000
-let quartos = 2
+let quartos = 3
 let precoTotal = precoCasa(metragem, quartos)
 
 if (quartos < 1 || quartos > 3) {
