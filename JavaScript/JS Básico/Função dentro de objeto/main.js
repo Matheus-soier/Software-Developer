@@ -7,4 +7,4 @@ let pessoas = {
   }
 }
 
-console.log(pessoas.nomeCompleto())
+console.log(pessoas.nomeCompleto( ))
