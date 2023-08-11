@@ -11,6 +11,8 @@ function clicou() {
   ul.innerHTML += '<li>Item <strong>adicionado</strong></li>'
 
   ul.children[0].innerHTML = '<li>Item <strong>alterado</strong> haha</li>'
+
+  ul.children[1].append(` - (alterado)`)
 }
 
 //Existe o innerHTML -> altera o HTML, adiciona, etc
