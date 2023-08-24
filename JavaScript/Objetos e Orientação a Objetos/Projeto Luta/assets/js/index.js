@@ -1,6 +1,10 @@
-let char = new Knight('Matheus');
+let char = new Knight('Guerreiro');
+let monster = new BigMonster();
+const stage = new Stage(
+  char,
+  monster,
+  document.querySelector('#char'),
+  document.querySelector('#monster')
+);
 
-console.log(char.name);
-console.log(char.maxLife);
-console.log(char.defense);
-console.log(char.attack);
+stage.start();
