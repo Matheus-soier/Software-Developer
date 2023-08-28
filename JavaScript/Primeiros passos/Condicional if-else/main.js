@@ -16,4 +16,4 @@ if (idade >= 18) {
 // Tipos de iguais:
 // "==" -> serve para igualar tipos diferentes de valores (stringers, numbers)
 
-// "===" -> serve para igualar tipos iguais de valores (stringer -> stringer, ou, number -> number)
+// "===" -> serve para igualar tipos iguais de valores (stringer -> stringer, ou, number -> number).
