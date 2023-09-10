@@ -2,7 +2,7 @@
 String para Number:
 -> Number.parseFloat(n);
 -> Number.parseInt(n);
--> NUmber(n);
+-> Number(n);
 
 Number para String:
 -> String(n);
