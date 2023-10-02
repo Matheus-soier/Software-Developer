@@ -1,5 +1,6 @@
 document.querySelector("#button").addEventListener('click', () =>{
-    fetch('https://jsonplaceholder.typicode.com/po2sts').then((response) => {
+    fetch('https://jsonplaceholder.typicode.com/posts').then((response) => {
+        console.log(`Status: ${response.status}`)
         return response.json();
     }).then((json) => {
         alert(`Titulo do primeiro post ${json[0].title}`)
