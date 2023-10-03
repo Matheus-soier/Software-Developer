@@ -1,7 +1,6 @@
 document.querySelector('#btn').addEventListener('click', reqTeste);
 document.querySelector('#inserir').addEventListener('click', inserirPost);
 
-
 //let cliclou = async () => {}
 //async function cliclou() {}
 
