@@ -12,6 +12,27 @@ document.querySelector("#button").addEventListener('click', () =>{
     })
 })
 
-//catch -> usado quando requisição falha de alguma maneira
+document.querySelector("#inserir").addEventListener("click", inserir());
 
+function inserir() {
+    fetch('https://jsonplaceholder.typicode.com/posts',{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            title: "Título de Teste",
+            body: "Corpo de Teste",
+            userId: 2
+        })
+    })
+    .then((response) => {
+        return response.json();
+    })
+    .then((json) => {
+        console.log(json);
+    });
+}
+
+//catch -> usado quando requisição falha de alguma maneira
 //finally -> sempre será executado, requisição dando certo ou errado
