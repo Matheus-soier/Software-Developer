@@ -31,6 +31,11 @@ function inserir() {
     })
     .then((json) => {
         console.log(json);
+    }).catch((error) => {
+        alert("Requisição falhou!");
+        console.log(error);
+    }).finally(() => {
+        alert("Acabou tudo!");
     });
 }
 
