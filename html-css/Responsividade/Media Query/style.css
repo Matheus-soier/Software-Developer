@@ -1,0 +1,38 @@
+h1 {
+    color: red;
+}
+
+/* Edição para telas */
+@media screen and (max-width: 1100px) {
+    h1 {
+        color: blue;
+    }
+}
+
+/* Edição para impressões */
+@media print and (max-width: 600px) {
+    h1 {
+        color: green;
+    }
+}
+
+/* Edição em todas situações */
+@media (max-width: 500px) {
+    h2 {
+        color: teal;
+    }
+}
+
+/* Edição com AND */
+@media (min-width: 400px) and (max-width: 500px) {
+    h3 {
+        font-size: 30px;
+    }
+}
+
+/* Edição OR*/
+@media (max-width: 300px), (orientation: landscape) {
+    h4 {
+        color: aquamarine;
+    }
+}
