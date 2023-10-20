@@ -10,7 +10,7 @@ async function reqTeste() {
     console.log(`Status: ${response.status}`);
     alert(`Titulo do primeiro post ${json[0].title}`);
     //força o aguardo da resposta da requisição
-    alert(`CLICLOU!!`);
+    alert(`CLICOU!!`);
 }
 
 async function inserirPost() {
