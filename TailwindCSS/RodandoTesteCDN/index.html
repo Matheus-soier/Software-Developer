@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Tailwind CSS via CDN</title>
+    <!--
+        IMPORTANDO VIA CDN -> Nunca fazer um site desta forma, apenas para teste
+    -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Extendendo uma nova cor ao Tailwind
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vermelho: '#FF0000'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-blue-900">
+    <h1 class="text-3xl font-bold underline bg-vermelho">Hello word</h1>
+</body>
+</html>
