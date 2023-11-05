@@ -42,6 +42,14 @@ let arrayEvery = numeros.every((item) => (item > 20) ? true : false);
 //Verifica se pelo menos 1 valor passa na condição
 let arraySome = numeros.some((item) => (item > 5) ? true : false);
 
+let  arraySome2 = numeros.some(function (item) {
+    if(item > 5) {
+        return true;
+    } else {
+        return false;
+    }
+});
+
 //Verifica e retorna se existe o valor dentro do array
 let arrayFind = numeros.find((item) => (item == 16) ? true : false);
 
