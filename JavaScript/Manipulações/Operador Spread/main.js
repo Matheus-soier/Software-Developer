@@ -24,7 +24,6 @@ let novaInfo = {
 
 let {nome:nomeSoier, dataNascimento:{idade:idadeSoier}} = novaInfo;
 
-
 console.log(nomeSoier);
 console.log(info);
 console.log(novaInfo);
@@ -39,3 +38,22 @@ function adicionarInfo(info) {
 }
 
 console.log(adicionarInfo(novaInfo));
+
+let arrayObjetos = [
+    {nome: "Matheus"},
+    {nome: "Bob"},
+    {nome: "Djanira"}
+];
+
+function spreadOperator(arrayObjetos) {
+    let arrayAtualizado = arrayObjetos.map(objeto => {
+        return {
+            ...objeto,
+            endereco: "Rua Benjamin Capusso",
+            numero: 247
+        };
+    });
+    return arrayAtualizado;
+}
+
+console.log(spreadOperator(arrayObjetos));
