@@ -16,10 +16,6 @@ function nomeRest(...nomes) {
 nomeRest("Matheus", "Gustavo", "Gabriel", "Miguel", "João");
 
 let nomes = ["Matheus", "Gustavo"];
+const refac = (...nomes) => {for(i in nomes) {console.log(nomes[i])}};
+console.log(refac(...nomes, "miguel", "carlos"));
 
-function novosNomes(...nomes) {
-    for(i in nomes) {
-        console.log(nomes[i].toString());
-      }
-}
-novosNomes(...nomes, "Miguel", "Carlos");
