@@ -13,3 +13,4 @@ console.log(password === confirmPassword ? "Acesso permitido!" : "Acesso negado!
 
 
 
+
