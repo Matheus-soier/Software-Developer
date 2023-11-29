@@ -3,4 +3,5 @@
 let botao = document.querySelector('#btn');
 botao.addEventListener('click', () => {
     alert(`clicou no botão!`)
-})
+});
+
