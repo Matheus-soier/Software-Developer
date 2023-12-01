@@ -1,6 +1,6 @@
 let btnReq = document.querySelector("#btnReq").addEventListener('click', loadPosts);
 let posts = document.querySelector("#posts");
-posts.innerHTML = `0 posts`
+posts.innerHTML = `0 posts`;
 
 function loadPosts() {
     posts.innerHTML = `Carregando...`
