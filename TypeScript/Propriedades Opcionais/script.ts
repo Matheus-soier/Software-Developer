@@ -11,4 +11,4 @@ let u = {
     nome: `Matheus`
 }
 
-let result = boasVindas(u);
+let resultado = boasVindas(u);
