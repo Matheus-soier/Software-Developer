@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Responsivo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-screen h-screen min-h-max flex justify-center items-center">
+    <div class="container max-w-7xl flex flex-col justify-center gap-3 p-3 h-max bg-white rounded-sm">
+        <div class="grid grid-cols-2 w-full h-max gap-2 md:grid-cols-3">
+            <div class="w-full shadow-sm h-48 bg-[url('images/ba95512a8943933a5d5d77296e0cb765.jpg')] bg-cover bg-center col-span-full md:col-span-2 md:row-span-2 md:h-full"></div>
+            <div class="w-full shadow-sm h-48 bg-[url('images/bd28d19edbd62be91f6d7f998bd5e6fa.jpg')] bg-cover bg-center"></div>
+            <div class="w-full shadow-sm h-48 bg-[url('images/c96f9ac11a0a0024e885ac5692c7abb5.jpg')] bg-cover bg-center"></div>
+        </div>
+        <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Titulo da Casa</p>
+            <div class="flex gap-2">
+                <div class="w-max inline-block bg-green-600 text-white px-4 py-1 rounded-lg">
+                    <p class="text-sm">Campo</p>
+                </div>
+                <div class="w-max inline-block bg-green-600 text-white px-4 py-1 rounded-lg">
+                    <p class="text-sm">Moderno</p>
+                </div>
+                <div class="w-max inline-block bg-green-600 text-white px-4 py-1 rounded-lg">
+                    <p class="text-sm">Piscina</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
