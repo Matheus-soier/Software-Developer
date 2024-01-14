@@ -2,12 +2,10 @@ import { Autor } from '@/components/Autor';
 import { Children } from '@/components/Card';
 import { GeoForm } from '@/components/GeoForms';
 import { Person } from '@/components/Person';
-import { personList } from '@/data/personList';
+import { Table } from '@/components/Tabela';
 //Export de Componente default: import Square from '@/components/Square';
 
 const Page = () => {
-  
-  const list = personList.map(person => <li>{person.name}</li>);
 
   return (
     <div className="flex flex-col items-center max-w-screen gap-3">
@@ -33,9 +31,7 @@ const Page = () => {
 
       <Autor frase='Quem Pensa Enriquece!'/>
 
-      <ul>
-        {list}
-      </ul>
+      <Table/>
 
   </div>
   );
