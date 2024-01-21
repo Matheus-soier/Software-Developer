@@ -9,6 +9,13 @@ const Page = () => {
   }
 
   const[nameInput, setNameInput] = useState('');
+  const [count, setCount] = useState(0);
+
+  function updateCount() {
+    setCount(count +2);
+    setCount(c => c + 2);
+    setCount(c => c + 2);
+  }
 
   return (
     <main className="w-screen h-screen flex flex-col items-center justify-center">
@@ -28,8 +35,14 @@ const Page = () => {
          placeholder="Digite seu nome"
          onChange={e => setNameInput(e.target.value)}
          />
+         <p>Seu nome é: {nameInput}</p>
         </div>
-        <p>Seu nome é: {nameInput}</p>
+        <div>
+          <p className="text-black text-lg text-center">{count}</p>
+         <button 
+         className="bg-green-600 text-white px-6 py-1 rounded-md border-none" 
+         onClick={updateCount}>+6</button>
+        </div>
      </div>
      </main>
   )
