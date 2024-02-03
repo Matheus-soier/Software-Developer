@@ -51,7 +51,7 @@ export const listReducer = (list: Item[], action: ListAction) => {
                 if(t.id === action.payload.id) {
                     t.done = !t.done;
                 }
-               return t;
+                return t;
               })
         case 'remove':
             return list.filter(t => t.id !== action.payload.id);
