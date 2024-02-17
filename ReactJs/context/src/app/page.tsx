@@ -1,36 +1,15 @@
 "use client"
 
-const Subtitle = ({ label }: {label: string})=> {
-  return(
-    <p>{label}</p>
-  );
-}
+import { CountProvider } from "@/contexts/CountContext";
+import { Header } from "../components/Header";
 
-const Title = ({ label }: {label: string})=> {
-  return(
-    <h1>{label}</h1>
-  );
-}
+const Page = () => { 
 
-const Header = ({title, subtitle}: {title: string; subtitle: string}) => {
-  return(
-    <header>
-      <Title label={title}/>
-      <Subtitle label={subtitle}/>
-    </header>
-    );
-}
-
-
-const Page = () => {
-  const pageInfo = {
-    title: 'Titulo maroto',
-    subtitle: 'Subtitulo muito legal e bem feito'
-  }
-  
   return (
     <div className="container mx-auto">
-      <Header title={pageInfo.title} subtitle={pageInfo.subtitle}/>
+      <CountProvider>
+        <Header />
+      </CountProvider>
     </div>
   );
 };
