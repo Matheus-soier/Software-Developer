@@ -13,9 +13,9 @@ export const Header = () => {
     }
     
     return(
-        <header className={`w-full h-16 flex justify-center ${ThemeCtx?.theme === 'dark' ? 'bg-slate-900' : 'bg-white'}`}>
+        <header className="w-full h-16 flex justify-center bg-white dark:bg-slate-900">
             <div className={`flex-grow max-w-6xl flex justify-between items-center px-4`}>
-                <div className={`${ThemeCtx?.theme === 'dark' ? 'bg-white' : 'bg-slate-900'} w-10 h-10 rounded-full`}></div>
+                <div className=" w-10 h-10 rounded-full dark:bg-white bg-slate-900"></div>
                 <ButtonTheme label={`${ThemeCtx?.theme === 'dark' ? 'Light Mode' : 'Dark Mode'}`} onClick={handleToggleTheme} />
             </div>
         </header>

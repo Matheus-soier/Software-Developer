@@ -13,7 +13,7 @@ export const ButtonTheme = ({label, onClick}: ButtonType) => {
 
     return(
         <button 
-        className={`${themeCtx?.theme === 'dark' ? 'bg-white text-slate-900': 'bg-slate-900 text-white'} px-4 py-2 rounded-lg font-semibold flex items-center flex-row-reverse gap-1`}
+        className="px-4 py-2 rounded-lg font-semibold flex items-center flex-row-reverse gap-1 dark:bg-white dark:text-slate-900 bg-slate-900 text-white"
         onClick={onClick}
         >
             {label}
