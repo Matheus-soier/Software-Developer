@@ -11,6 +11,7 @@ async function inserirPost() {
             'Content-Type': 'application/json'
         }
     });
+    
     let json = await req.json();
     console.log(json);
 }

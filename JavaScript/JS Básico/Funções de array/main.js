@@ -4,6 +4,6 @@ let fruits = ['Maça', 'Uva', 'Banana', 'Laranja']
 fruits.push('Kiwi')
 fruits.shift()
 
-console.log(fruits.length)
-console.log(fruits.join(', '))
-console.log(fruits)
+console.log(fruits.length);
+console.log(fruits.join(', '));
+console.log(fruits);
