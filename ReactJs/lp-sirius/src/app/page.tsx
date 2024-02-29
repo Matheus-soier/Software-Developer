@@ -2,6 +2,7 @@ import { Container } from "@/components/Container/Container";
 import { Hero } from "@/components/Hero/Hero";
 import { ColGridMain } from "@/components/Main/ColGridMain";
 import { Projects } from "@/components/Main/Projects";
+import { Timeline } from "@/components/Timeline/TimeLine";
 import Image from "next/image";
 
 const page = () => {
@@ -77,6 +78,7 @@ const page = () => {
           </ColGridMain>
         </div>
         <Projects />
+        <Timeline />
       </Container>
   </div>
   );
