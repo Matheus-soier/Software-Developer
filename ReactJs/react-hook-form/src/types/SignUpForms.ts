@@ -3,4 +3,6 @@ export type SignUpForms = {
     lastName: string;
     age: number;
     placeholder: string;
+    email: string;
 }
+
